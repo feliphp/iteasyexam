@@ -12,18 +12,18 @@
    */
 defined('MOODLE_INTERNAL') || die();
 
-$string['modulename'] = 'Examen Fácil para el ISSSTE';
-$string['modulenameplural'] = 'Examen Fácil para el ISSSTE';
+$string['modulename'] = 'Examen Fácil';
+$string['modulenameplural'] = 'Examen Fácil';
 $string['parentorg'] = 'Parent';
 $string['iteasyexam_help'] = 'Este es el contenido de la ayuda contextual.';
-$string['iteasyexam'] = 'Examen Fácil para el ISSSTE';
-$string['iteasyexam_questions'] = 'Examen Fácil para el ISSSTE - Preguntas';
-$string['iteasyexam_answers'] = 'Examen Fácil para el ISSSTE - Respuestas y Calificaciones';
-$string['iteasyexam_delegations'] = 'Examen Fácil para el ISSSTE - Catálogo Delegaciones';
+$string['iteasyexam'] = 'Examen Fácil ';
+$string['iteasyexam_questions'] = 'Examen Fácil - Preguntas';
+$string['iteasyexam_answers'] = 'Examen Fácil  - Respuestas y Calificaciones';
+$string['iteasyexam_delegations'] = 'Examen Fácil  - Catálogo Delegaciones';
 $string['iteasyexam_exam'] = 'Examen :';
-$string['pluginadministration'] = 'Examen Fácil para el ISSSTE '.
+$string['pluginadministration'] = 'Examen Fácil  '.
 ' Administración';
-$string['pluginname'] = 'Examen Fácil para el ISSSTE Plugin ';
+$string['pluginname'] = 'Examen Fácil Plugin ';
 $string['link_return_update'] = 'Regresar a Actualización de Datos';
 $string['link_update_form'] = 'Ir al Formulario de Actualización de Datos para el '.
 'ISSSTE';
