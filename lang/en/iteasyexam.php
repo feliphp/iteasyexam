@@ -12,19 +12,19 @@
    */
 defined('MOODLE_INTERNAL') || die();
 
-$string['modulename'] = 'Easy Exam for ISSSTE';
-$string['modulenameplural'] = 'Easy Exam for ISSSTE';
+$string['modulename'] = 'Easy Exam ';
+$string['modulenameplural'] = 'Easy Exam ';
 $string['parentorg'] = 'Parent';
 $string['iteasyexam_help'] = 'This is the content of the help tooltip.';
-$string['iteasyexam'] = 'Easy Exam for ISSSTE';
-$string['iteasyexam_questions'] = 'Easy Exam for ISSSTE - Questions';
-$string['iteasyexam_answers'] = 'Easy Exam for ISSSTE - Answers';
-$string['iteasyexam_delegations'] = 'Easy Exam for ISSSTE - Delegations';
+$string['iteasyexam'] = 'Easy Exam';
+$string['iteasyexam_questions'] = 'Easy Exam  - Questions';
+$string['iteasyexam_answers'] = 'Easy Exam  - Answers';
+$string['iteasyexam_delegations'] = 'Easy Exam  - Delegations';
 $string['iteasyexam_exam'] = 'Exam :';
-$string['pluginadministration'] = 'Easy Exam for ISSSTE Administration';
-$string['pluginname'] = 'Easy Exam for ISSSTE Plugin ';
-$string['link_return_update'] = 'Return to Easy Exam for ISSSTE';
-$string['link_update_form'] = 'Go to Easy Exam for ISSSTE Form';
+$string['pluginadministration'] = 'Easy Exam Administration';
+$string['pluginname'] = 'Easy Exam  Plugin ';
+$string['link_return_update'] = 'Return to Easy Exam ';
+$string['link_update_form'] = 'Go to Easy Exam  Form';
 $string['pages'] = 'Pages';
 $string['label_table_content_id'] = 'Id';
 $string['label_table_name_exam'] = 'Exam Name';
