@@ -1,0 +1,12 @@
+/** General Styles **/
+/*
+@Autor: JFHR
+@Company: Itera
+@fecha:  2020-01-29
+@update:  2020-01-29
+@Comentario: Versiones del módulo
+* 
+*/
+.preguntas span{
+    display: block !important;
+}

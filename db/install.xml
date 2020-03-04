@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?> <!-- @Autor: JFHR  @fecha:  2020-01-24 Genera las tablas sql por medio de las funciones de moodle al instalar -->
+<XMLDB PATH="mod/iteasyexam/db" VERSION="20191010" COMMENT="XMLDB file for Moodle mod/iteasyexam"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="../../../lib/xmldb/xmldb.xsd"
+>
+  <TABLES>
+    <TABLE NAME="iteasyexam" COMMENT="Default comment for exam">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"/>
+	      <FIELD NAME="course" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="name" TYPE="char" LENGTH="185" NOTNULL="true" DEFAULT="name" SEQUENCE="false"/>
+        <FIELD NAME="instructions" TYPE="char" LENGTH="255" NOTNULL="true" DEFAULT="name" SEQUENCE="false"/>
+        <FIELD NAME="enabled" TYPE="binary" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="datecreated" TYPE="char" LENGTH="150" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="datemodified" TYPE="char" LENGTH="150" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+	    <INDEXES>
+        <INDEX NAME="course" UNIQUE="false" FIELDS="course"/>
+      </INDEXES>
+    </TABLE>
+
+    <TABLE NAME="iteasyexam_quest" COMMENT="Default comment for quest">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"/>
+	      <FIELD NAME="course" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true" DEFAULT="name" SEQUENCE="false"/>
+	      <FIELD NAME="id_examen" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="false"/>
+        <FIELD NAME="answer_one" TYPE="char" LENGTH="255" NOTNULL="true" DEFAULT="" SEQUENCE="false"/>
+        <FIELD NAME="correct_answer_one" TYPE="binary" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="answer_two" TYPE="char" LENGTH="150" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="correct_answer_two" TYPE="binary" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="answer_three" TYPE="char" LENGTH="150" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="correct_answer_three" TYPE="binary" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="answer_four" TYPE="char" LENGTH="150" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="correct_answer_four" TYPE="binary" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="enabled" TYPE="binary" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="datecreated" TYPE="char" LENGTH="150" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="datemodified" TYPE="char" LENGTH="150" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+
+    <TABLE NAME="iteasyexam_answers" COMMENT="Default comment for answers">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"/>
+        <FIELD NAME="id_examen" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+	      <FIELD NAME="course" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="name" TYPE="char" LENGTH="255" NOTNULL="true" DEFAULT="name" SEQUENCE="false"/>
+        <FIELD NAME="emam_grade" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="false"/>
+	      <FIELD NAME="number_employee" TYPE="char" LENGTH="155" NOTNULL="true" DEFAULT="" SEQUENCE="false"/>
+        <FIELD NAME="unit_hospital" TYPE="char" LENGTH="155" NOTNULL="true" DEFAULT="" SEQUENCE="false"/>
+        <FIELD NAME="charge" TYPE="char" LENGTH="155" NOTNULL="true" DEFAULT="" SEQUENCE="false"/>
+        <FIELD NAME="institutional_email" TYPE="char" LENGTH="255" NOTNULL="true" DEFAULT="" SEQUENCE="false"/>
+        <FIELD NAME="personal_email" TYPE="char" LENGTH="255" NOTNULL="true" DEFAULT="" SEQUENCE="false"/>
+        <FIELD NAME="delegation" TYPE="char" LENGTH="155" NOTNULL="true" DEFAULT="" SEQUENCE="false"/>
+        <FIELD NAME="ip" TYPE="char" LENGTH="50" NOTNULL="true" DEFAULT="" SEQUENCE="false"/>
+        <FIELD NAME="answers" TYPE="char" LENGTH="250" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="datecreated" TYPE="char" LENGTH="150" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="datemodified" TYPE="char" LENGTH="150" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+
+    <TABLE NAME="iteasyexam_delegations" COMMENT="Default comment for delegations">
+      <FIELDS>
+        <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" UNSIGNED="true" SEQUENCE="true"/>
+        <FIELD NAME="course" TYPE="int" LENGTH="10" NOTNULL="true" DEFAULT="0" SEQUENCE="false"/>
+        <FIELD NAME="name" TYPE="char" LENGTH="150" NOTNULL="true" DEFAULT="name" SEQUENCE="false"/>
+        <FIELD NAME="datecreated" TYPE="char" LENGTH="150" NOTNULL="true" SEQUENCE="false"/>
+        <FIELD NAME="datemodified" TYPE="char" LENGTH="150" NOTNULL="true" SEQUENCE="false"/>
+      </FIELDS>
+      <KEYS>
+        <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+      </KEYS>
+    </TABLE>
+
+  </TABLES>
+</XMLDB>
